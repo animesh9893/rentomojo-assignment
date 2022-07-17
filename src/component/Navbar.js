@@ -39,7 +39,7 @@ function DrawerAppBar(props) {
       <List>
         <ListItem key="search" disablePadding>
           <ListItemButton sx={{ textAlign: 'center' }}>
-            <ListItemText onClick={(e)=>toggleSearch(e)}  primary={"search"} />
+            <ListItemText onClick={(e)=>toggleSearch(e)}  primary={props.searchOpen?"Close Search":"search"} />
           </ListItemButton>
         </ListItem>
       </List>
@@ -70,7 +70,7 @@ function DrawerAppBar(props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               <Button onClick={(e)=>toggleSearch(e)} key="search" sx={{ color: '#fff' }}>
-                Search
+                {props.searchOpen?"Close Search":"search"}
               </Button>
           </Box>
         </Toolbar>
