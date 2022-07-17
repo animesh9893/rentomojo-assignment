@@ -33,7 +33,7 @@ function DrawerAppBar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        Animesh Shrivatri
+        Rento Mojo
       </Typography>
       <Divider />
       <List>
@@ -66,7 +66,7 @@ function DrawerAppBar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            Animesh Shrivatri
+            Rento Mojo
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               <Button onClick={(e)=>toggleSearch(e)} key="search" sx={{ color: '#fff' }}>
